@@ -1,0 +1,1008 @@
+
+/* =========================================
+   1. GENERAL WEBSITE SETTINGS
+   These styles apply to all seven pages.
+========================================= */
+
+/* Removes default spacing and makes sizing easier */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sets the default font, background, and text color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8F9F5;
+    color: #26382B;
+    line-height: 1.6;
+}
+
+/* Makes images fit inside their containers */
+img {
+    max-width: 100%;
+}
+
+
+/* =========================================
+   2. HEADER AND NAVIGATION BAR
+   Styles the website name and menu links.
+========================================= */
+
+/* Adds space around the navigation area */
+header {
+    background-color: #F8F9F5;
+    padding: 20px 8%;
+}
+
+/* Arranges the logo and menu horizontally */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Styles the website logo */
+.logo {
+    color: #355E3B;
+    font-size: 24px;
+}
+
+/* Arranges navigation links in a row */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Styles the navigation links */
+.nav-links a {
+    text-decoration: none;
+    color: #26382B;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Changes the link color when hovered */
+.nav-links a:hover {
+    color: #739072;
+}
+
+
+/* =========================================
+   3. FOOTER
+   Styles the bottom part of every page.
+========================================= */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #E8EDE4;
+    color: #355E3B;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   4. HOME PAGE - WELCOME SECTION
+   Styles the introduction on the homepage.
+========================================= */
+
+/* Arranges the welcome text and photo collage */
+.home-hero {
+    min-height: 75vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    padding: 60px 10%;
+}
+
+/* Controls the width of the introduction */
+.hero-intro {
+    max-width: 550px;
+}
+
+/* Small decorative text above the main heading */
+.welcome {
+    color: #739072;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+/* Main welcome heading */
+.hero-intro h1 {
+    color: #26382B;
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+/* Highlights selected words in sage green */
+.hero-intro h1 span {
+    color: #527B56;
+}
+
+/* Introduction paragraph */
+.hero-intro p {
+    margin-bottom: 25px;
+    color: #526052;
+}
+
+/* HOME PAGE BUTTON */
+.button {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #527B56;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 1px solid #527B56;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background-color: #E8EDE4;
+    color: #355E3B;
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   6. HOME PAGE - PHOTO COLLAGE
+   Arranges the three photos in a decorative layout.
+========================================= */
+
+/* Creates the area where the photos are placed */
+.photo-collage {
+    position: relative;
+    height: 420px;
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+}
+
+/* Shared design for all three photos */
+.collage-photo {
+    position: absolute;
+    object-fit: cover;
+    border: 8px solid white;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(38, 56, 43, 0.12);
+}
+
+/* First photo */
+.photo-one {
+    width: 220px;
+    height: 280px;
+    top: 20px;
+    left: 20px;
+    transform: rotate(-5deg);
+    z-index: 2;
+}
+
+/* Second photo */
+.photo-two {
+    width: 180px;
+    height: 210px;
+    top: 0;
+    right: 0;
+    transform: rotate(6deg);
+    z-index: 1;
+}
+
+/* Third photo */
+.photo-three {
+    width: 190px;
+    height: 180px;
+    bottom: 5px;
+    right: 15px;
+    transform: rotate(-4deg);
+    z-index: 3;
+}
+
+/* Decorative message beside the collage */
+.collage-note {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    color: #527B56;
+    font-size: 14px;
+    font-style: italic;
+    z-index: 4;
+}
+
+
+/* =========================================
+   7. HOME PAGE - EXPLORE SECTION
+   Styles the shortcuts to other website pages.
+========================================= */
+
+/* Adds spacing around the Explore section */
+.home-section {
+    padding: 70px 10%;
+}
+
+/* Centers the section heading */
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Styles the Explore heading */
+.section-heading h2 {
+    color: #355E3B;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Styles the description below the heading */
+.section-heading p {
+    color: #526052;
+}
+
+/* Arranges the shortcut cards in three columns */
+.quick-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Styles each shortcut card */
+.quick-card {
+    display: block;
+    background-color: #E8EDE4;
+    padding: 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Card heading */
+.quick-card h3 {
+    color: #355E3B;
+    margin-bottom: 10px;
+}
+
+/* Card description */
+.quick-card p {
+    color: #526052;
+    font-size: 14px;
+}
+
+/* Adds a hover effect to the cards */
+.quick-card:hover {
+    background-color: #DFE8DA;
+    transform: translateY(-5px);
+}
+
+
+/* =========================================
+   8. RESPONSIVE HOME PAGE
+   Adjusts the homepage for smaller screens.
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* Places the welcome text above the photos */
+    .home-hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+        padding: 40px 7%;
+    }
+
+    /* Makes the heading smaller on phones */
+    .hero-intro h1 {
+        font-size: 34px;
+    }
+
+    /* Adjusts the collage size */
+    .photo-collage {
+        max-width: 350px;
+        height: 380px;
+    }
+
+    /* Makes the Explore cards appear in one column */
+    .quick-links {
+        grid-template-columns: 1fr;
+    }
+
+    /* Reduces section spacing */
+    .home-section {
+        padding: 45px 7%;
+    }
+}
+
+
+/* =========================================
+   9. ABOUT PAGE
+   Styles the profile picture and introduction.
+========================================= */
+
+/* Adds space around the About page content */
+.page-container {
+    padding: 60px 10%;
+    min-height: 75vh;
+}
+
+/* Centers the page title */
+.page-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-heading h1 {
+    color: #355E3B;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+/* Places the picture and text beside each other */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* Sets the profile picture size */
+.about-image img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Controls the width of the introduction */
+.about-text {
+    max-width: 550px;
+}
+
+/* Styles the About page headings */
+.about-text h2,
+.about-text h3 {
+    color: #355E3B;
+    margin-bottom: 10px;
+}
+
+/* Adds spacing between paragraphs */
+.about-text p {
+    margin-bottom: 15px;
+}
+
+/* Adds space before the fun facts list */
+.about-text ul {
+    padding-left: 20px;
+}
+
+/* Adjusts the About page for smaller screens */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text ul {
+        text-align: left;
+    }
+}
+
+
+/* =========================================
+   10. HOBBIES PAGE
+   Styles the cards displaying my hobbies.
+========================================= */
+
+/* Arranges hobby cards into two columns */
+.hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Styles each hobby card */
+.hobby-card {
+    background-color: #E8EDE4;
+    padding: 30px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* Styles the hobby titles */
+.hobby-card h2 {
+    color: #355E3B;
+    margin-bottom: 12px;
+}
+
+/* Styles the hobby descriptions */
+.hobby-card p {
+    color: #526052;
+}
+
+/* Adds a small hover effect */
+.hobby-card:hover {
+    transform: translateY(-5px);
+    background-color: #DFE8DA;
+}
+
+/* Changes the cards into one column on smaller screens */
+@media (max-width: 768px) {
+    .hobby-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* =========================================
+   GALLERY PAGE
+   Displays 15 pictures in a responsive grid.
+========================================= */
+
+/* Arranges the pictures into three columns */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Styles each picture card */
+.gallery-card {
+    background-color: #E8EDE4;
+    border: 1px solid #D5DED1;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+/* Sets the picture size */
+.gallery-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Adds an effect when hovering over a picture */
+.gallery-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Styles the picture captions */
+.gallery-caption {
+    padding: 18px;
+}
+
+/* Styles the caption titles */
+.gallery-caption h3 {
+    color: #355E3B;
+    margin-bottom: 8px;
+}
+
+/* Styles the caption descriptions */
+.gallery-caption p {
+    color: #526052;
+    font-size: 14px;
+}
+
+/* Tablet and smaller screen layout */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .gallery-card img {
+        height: 180px;
+    }
+}
+
+/* Small phone layout */
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+/* =========================================
+   15. FAVORITES PAGE
+   Styles the clickable favorite categories.
+========================================= */
+
+/* Keeps the favorite sections centered */
+.interactive-favorites {
+    max-width: 850px;
+    margin: auto;
+}
+
+/* Styles each clickable favorite category */
+.favorite-detail {
+    background-color: #E8EDE4;
+    border: 1px solid #D5DED1;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+/* Styles the clickable category titles */
+.favorite-detail summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 25px;
+    color: #355E3B;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+}
+
+/* Removes the browser's default arrow */
+.favorite-detail summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Changes the background when hovering */
+.favorite-detail summary:hover {
+    background-color: #DFE8DA;
+}
+
+/* Styles the category numbers */
+.favorite-detail summary span:first-child {
+    color: #739072;
+    font-size: 14px;
+}
+
+/* Styles the plus sign */
+.favorite-detail .arrow {
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+/* Rotates the plus sign when the category opens */
+.favorite-detail[open] .arrow {
+    transform: rotate(45deg);
+}
+
+/* BOLD AND COLORED TEXT */
+.highlight-word {
+    font-weight: bold;
+    color: #527B56;
+}
+
+
+/* =========================================
+   16. FAVORITES CONTENT
+   Styles the descriptions and pictures.
+========================================= */
+
+/* Adds space inside each opened category */
+.favorite-content {
+    padding: 25px;
+    border-top: 1px solid #D5DED1;
+    text-align: center;
+}
+
+/* Sets the size and appearance of pictures */
+.favorite-content img {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Styles the content headings */
+.favorite-content h2 {
+    color: #355E3B;
+    margin-bottom: 12px;
+}
+
+/* Styles the descriptions */
+.favorite-content p {
+    color: #526052;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   17. FAVORITE MUSIC
+   Styles the audio player.
+========================================= */
+
+/* Sets the audio player's width and position */
+.favorite-content audio {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+}
+
+
+/* =========================================
+   18. FAVORITE QUOTE
+   Creates an elegant centered quote design.
+========================================= */
+
+/* Gives the quote its own soft background */
+.quote-content {
+    padding: 45px 25px;
+    background-color: #F1F3EC;
+    text-align: center;
+}
+
+/* Styles and centers the quotation */
+.quote-content blockquote {
+    max-width: 600px;
+    margin: 20px auto;
+    color: #355E3B;
+    font-size: 25px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* Styles the quote author */
+.quote-content p {
+    color: #739072;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   19. RESPONSIVE FAVORITES PAGE
+   Adjusts the layout for smaller screens.
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* Reduces the space inside category titles */
+    .favorite-detail summary {
+        padding: 18px;
+        font-size: 16px;
+    }
+
+    /* Makes pictures shorter on smaller screens */
+    .favorite-content img {
+        height: 200px;
+    }
+
+    /* Makes the quote text smaller */
+    .quote-content blockquote {
+        font-size: 20px;
+    }
+
+}
+
+
+/* =========================================
+   13. DREAMS PAGE
+   Styles the list of goals and future message.
+========================================= */
+
+/* Controls the width of the dreams content */
+.dreams-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+/* Arranges each dream item */
+.dream-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 25px;
+    border-bottom: 1px solid #D5DED1;
+    transition: 0.3s;
+}
+
+/* Adds a soft background when hovering */
+.dream-item:hover {
+    background-color: #E8EDE4;
+}
+
+/* Styles the dream numbers */
+.dream-number {
+    color: #739072;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Styles each dream title */
+.dream-item h2 {
+    color: #355E3B;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+/* Styles the dream descriptions */
+.dream-item p {
+    color: #526052;
+}
+
+/* Highlights the message for my future self */
+.future-message {
+    max-width: 850px;
+    margin: 50px auto 0;
+    padding: 35px;
+    background-color: #E8EDE4;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Styles the future message heading */
+.future-message h2 {
+    color: #355E3B;
+    margin-bottom: 15px;
+}
+
+/* Styles the future message paragraph */
+.future-message p {
+    color: #526052;
+}
+
+/* Adjusts spacing for smaller screens */
+@media (max-width: 768px) {
+    .dream-item {
+        gap: 15px;
+        padding: 20px 10px;
+    }
+
+    .future-message {
+        padding: 25px;
+    }
+}
+
+
+/* =========================================
+   14. CONTACT PAGE
+   Styles the contact information and form.
+========================================= */
+
+/* Arranges contact information and form side by side */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Styles the contact information section */
+.contact-info {
+    padding: 30px;
+    background-color: #E8EDE4;
+    border-radius: 8px;
+}
+
+/* Styles section headings */
+.contact-info h2,
+.contact-form h2 {
+    color: #355E3B;
+    margin-bottom: 15px;
+}
+
+/* Styles smaller headings */
+.contact-info h3 {
+    color: #527B56;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Styles the form container */
+.contact-form {
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #D5DED1;
+    border-radius: 8px;
+}
+
+/* Arranges form elements vertically */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles the form labels */
+.contact-form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #355E3B;
+    font-weight: bold;
+}
+
+/* Styles the input fields and message box */
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #D5DED1;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    width: 100%;
+}
+
+/* Allows the message box to be resized vertically */
+.contact-form textarea {
+    resize: vertical;
+}
+
+/* Styles the submit button */
+.contact-form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #355E3B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Changes the button color when hovered */
+.contact-form button:hover {
+    background-color: #739072;
+}
+
+/* Makes the contact sections stack on smaller screens */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================
+   CONTACT PAGE - SOCIAL MEDIA CARDS
+========================================= */
+
+/* Creates two columns for the social links */
+.social-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* Styles each social media card */
+.social-card {
+    display: block;
+    padding: 30px;
+    background-color: #E8EDE4;
+    border: 1px solid #D5DED1;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #26382B;
+    transition: 0.3s;
+}
+
+/* Styles the social media names */
+.social-card h2 {
+    color: #355E3B;
+    margin-bottom: 10px;
+}
+
+/* Styles the descriptions */
+.social-card p {
+    color: #526052;
+    font-size: 14px;
+}
+
+/* Adds an effect when visitors hover over a card */
+.social-card:hover {
+    background-color: #DFE8DA;
+    transform: translateY(-5px);
+}
+
+/* Keeps the introduction inside the page width */
+.page-heading {
+    max-width: 850px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.page-heading p {
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+/* Styles the closing message */
+.social-message {
+    text-align: center;
+    margin: 60px auto 20px;
+}
+
+/* Makes the cards stack on smaller screens */
+@media (max-width: 768px) {
+    .social-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CONTACT FORM CONTAINER */
+.contact-form-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #E8EDE4;
+    border: 1px solid #D5DED1;
+    border-radius: 15px;
+}
+/* FORM GROUP SPACING */
+.form-group {
+    margin-bottom: 22px;
+}
+
+/* FORM LABELS */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #355E3B;
+    font-weight: bold;
+}
+
+/* INPUT FIELDS */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #D5DED1;
+    border-radius: 8px;
+    background-color: #F8F9F5;
+    color: #26382B;
+    font-family: inherit;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.3s ease;
+}
+/* INPUT FOCUS EFFECT */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #739072;
+    box-shadow: 0 0 5px rgba(115, 144, 114, 0.3);
+}
+
+/* SUBMIT BUTTON */
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #527B56;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* SUBMIT BUTTON HOVER */
+.submit-button:hover {
+    background-color: #355E3B;
+    transform: translateY(-2px);
+}
+
+/* CONTACT FORM RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .contact-form-container {
+        padding: 25px 18px;
+        margin: 30px 15px;
+    }
+}
